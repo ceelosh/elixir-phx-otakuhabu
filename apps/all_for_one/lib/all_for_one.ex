@@ -3,16 +3,18 @@ defmodule AllForOne do
   Documentation for `AllForOne`.
   """
 
+  alias Abilities.Search
+
   @doc """
-  Hello world.
+  Search method.
 
   ## Examples
 
-      iex> AllForOne.hello()
-      :world
+      iex> AllForOne.search(url)
+      {:ok, %{}}
 
   """
-  def hello do
-    :world
+  def search(url) do
+    Search.execute(url)
   end
 end

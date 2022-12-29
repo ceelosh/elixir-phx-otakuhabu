@@ -1,4 +1,4 @@
-FROM elixir:1.12-alpine as base
+FROM elixir:1.12-alpine
 
 # init
 RUN apk add --update --no-cache \
